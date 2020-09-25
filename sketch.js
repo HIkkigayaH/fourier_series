@@ -25,7 +25,7 @@ function draw() {
     line(40, 300, 450, 300)
     text('t', 250, 320)
     text('x(t)', 10, 200)
-    text("Number of sinusoids used: " + `${slider.value()}`, 350, 50)
+    text("Number of sinusoids used: ", 350, 50)
     beginShape(LINES)
     for (let i = 0; i < xts.length; i++) {
         vertex(i + 40, 100 * xts[i] + 200)
