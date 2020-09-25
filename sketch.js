@@ -3,13 +3,13 @@ var t = 0
 var del_t = 0.1
 var slider
 function setup() {
-    createCanvas(window.innerWidth, 400);
+    createCanvas(displayWidth, 400);
     frameRate(100)
     fill(0)
     textSize(16)
     slider = createSlider(1, 5000, 1000)
     slider.position(10, 10)
-    slider.style('width', `${window.innerWidth-10}px`)
+    slider.style('width', `${displayWidth-10}px`)
 }
 
 function draw() {
