@@ -16,7 +16,7 @@ function draw() {
     background(220);
     t += del_t
     let xt = 0
-    for (let n = 1; n < slider.value(); n++) {
+    for (let n = 1; n <= slider.value(); n++) {
         xt += (1 / (n * 3.14)) * sin(n * t)
     }
     xt = (1 / 2) - xt
@@ -25,7 +25,7 @@ function draw() {
     line(40, 300, 450, 300)
     text('t', 250, 320)
     text('x(t)', 10, 200)
-    text(slider.value(), 350, 50)
+    text(`Number of sinusoids used: ${slider.value()}`, 350, 50)
     beginShape(LINES)
     for (let i = 0; i < xts.length; i++) {
         vertex(i + 40, 100 * xts[i] + 200)
