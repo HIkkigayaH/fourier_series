@@ -4,7 +4,7 @@ var del_t = 0.1
 var slider
 var xOffset = 100
 function setup() {
-    createCanvas(displayWidth, xOffset0);
+    createCanvas(displayWidth, 400);
     frameRate(100)
     fill(0)
     textSize(16)
