@@ -2,6 +2,7 @@ var xts = []
 var t = 0
 var del_t = 0.1
 var slider
+var width = window.innerWidth
 function setup() {
     createCanvas(width, 400);
     frameRate(100)
