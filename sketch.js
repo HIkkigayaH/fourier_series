@@ -7,7 +7,7 @@ function setup() {
     frameRate(100)
     fill(0)
     textSize(16)
-    slider = createSlider(1, 5000, 1000, 1)
+    slider = createSlider(1, 3000, 1000, 1)
     slider.position(10, 10)
     slider.style('width', `${displayWidth-10}px`)
 }
