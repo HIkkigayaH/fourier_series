@@ -2,15 +2,14 @@ var xts = []
 var t = 0
 var del_t = 0.1
 var slider
-var width = innerWidth
 function setup() {
-    createCanvas(width, 400);
+    createCanvas(window.innerWidth, 400);
     frameRate(100)
     fill(0)
     textSize(16)
     slider = createSlider(1, 5000, 1000)
     slider.position(10, 10)
-    slider.style('width', `${width-10}px`)
+    slider.style('width', `${window.innerWidth-10}px`)
 }
 
 function draw() {
